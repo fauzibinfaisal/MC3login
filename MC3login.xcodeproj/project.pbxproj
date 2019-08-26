@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB07BF002313B47000B1797A /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB07BEFF2313B47000B1797A /* RoundedButton.swift */; };
+		EB07BF022313BAAE00B1797A /* CatEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB07BF012313BAAE00B1797A /* CatEditViewController.swift */; };
 		EB1A54D12310076800049F05 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A54D02310076800049F05 /* LoginViewController.swift */; };
 		EB1A54D32310077700049F05 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1A54D22310077700049F05 /* RegisterViewController.swift */; };
 		EB5DDB4B230FE3BE0087A9DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DDB4A230FE3BE0087A9DD /* AppDelegate.swift */; };
@@ -17,9 +19,13 @@
 		EB5DDB5D230FE9310087A9DD /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DDB5C230FE9310087A9DD /* GradientView.swift */; };
 		EB5DDB5F230FEC810087A9DD /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DDB5E230FEC810087A9DD /* RoundedView.swift */; };
 		EB5DDB61230FEDB70087A9DD /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5DDB60230FEDB70087A9DD /* Extension.swift */; };
+		EBBBAD24231387D900942420 /* PhotoGalleryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBAD22231387D900942420 /* PhotoGalleryViewCell.swift */; };
+		EBBBAD25231387D900942420 /* PhotoGalleryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBBAD23231387D900942420 /* PhotoGalleryViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB07BEFF2313B47000B1797A /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		EB07BF012313BAAE00B1797A /* CatEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatEditViewController.swift; sourceTree = "<group>"; };
 		EB1A54D02310076800049F05 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EB1A54D22310077700049F05 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EB5DDB47230FE3BE0087A9DD /* MC3login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MC3login.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +38,8 @@
 		EB5DDB5C230FE9310087A9DD /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		EB5DDB5E230FEC810087A9DD /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		EB5DDB60230FEDB70087A9DD /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		EBBBAD22231387D900942420 /* PhotoGalleryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewCell.swift; sourceTree = "<group>"; };
+		EBBBAD23231387D900942420 /* PhotoGalleryViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoGalleryViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +72,55 @@
 		EB5DDB49230FE3BE0087A9DD /* MC3login */ = {
 			isa = PBXGroup;
 			children = (
+				EBBBAD212313825E00942420 /* Helper */,
+				EBBBAD202313823900942420 /* View */,
+				EBBBAD1F23137CE100942420 /* Controller */,
+				EBBBAD1E23137CD300942420 /* Model */,
 				EB5DDB4A230FE3BE0087A9DD /* AppDelegate.swift */,
-				EB5DDB4C230FE3BE0087A9DD /* ViewController.swift */,
-				EB5DDB4E230FE3BE0087A9DD /* Main.storyboard */,
 				EB5DDB51230FE3C00087A9DD /* Assets.xcassets */,
-				EB5DDB53230FE3C00087A9DD /* LaunchScreen.storyboard */,
 				EB5DDB56230FE3C00087A9DD /* Info.plist */,
+			);
+			path = MC3login;
+			sourceTree = "<group>";
+		};
+		EBBBAD1E23137CD300942420 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EBBBAD1F23137CE100942420 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB5DDB4C230FE3BE0087A9DD /* ViewController.swift */,
+				EB1A54D02310076800049F05 /* LoginViewController.swift */,
+				EB1A54D22310077700049F05 /* RegisterViewController.swift */,
+				EB07BF012313BAAE00B1797A /* CatEditViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EBBBAD202313823900942420 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB5DDB4E230FE3BE0087A9DD /* Main.storyboard */,
+				EB5DDB53230FE3C00087A9DD /* LaunchScreen.storyboard */,
+				EBBBAD22231387D900942420 /* PhotoGalleryViewCell.swift */,
+				EBBBAD23231387D900942420 /* PhotoGalleryViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBBBAD212313825E00942420 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
 				EB5DDB5C230FE9310087A9DD /* GradientView.swift */,
 				EB5DDB5E230FEC810087A9DD /* RoundedView.swift */,
 				EB5DDB60230FEDB70087A9DD /* Extension.swift */,
-				EB1A54D02310076800049F05 /* LoginViewController.swift */,
-				EB1A54D22310077700049F05 /* RegisterViewController.swift */,
+				EB07BEFF2313B47000B1797A /* RoundedButton.swift */,
 			);
-			path = MC3login;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +183,7 @@
 			files = (
 				EB5DDB55230FE3C00087A9DD /* LaunchScreen.storyboard in Resources */,
 				EB5DDB52230FE3C00087A9DD /* Assets.xcassets in Resources */,
+				EBBBAD25231387D900942420 /* PhotoGalleryViewCell.xib in Resources */,
 				EB5DDB50230FE3BE0087A9DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,7 +197,10 @@
 			files = (
 				EB1A54D12310076800049F05 /* LoginViewController.swift in Sources */,
 				EB5DDB61230FEDB70087A9DD /* Extension.swift in Sources */,
+				EBBBAD24231387D900942420 /* PhotoGalleryViewCell.swift in Sources */,
 				EB1A54D32310077700049F05 /* RegisterViewController.swift in Sources */,
+				EB07BF002313B47000B1797A /* RoundedButton.swift in Sources */,
+				EB07BF022313BAAE00B1797A /* CatEditViewController.swift in Sources */,
 				EB5DDB5F230FEC810087A9DD /* RoundedView.swift in Sources */,
 				EB5DDB4D230FE3BE0087A9DD /* ViewController.swift in Sources */,
 				EB5DDB4B230FE3BE0087A9DD /* AppDelegate.swift in Sources */,
