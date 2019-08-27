@@ -14,9 +14,14 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var phoneTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
+    @IBOutlet weak var registerButton: UIButton!
+    let buttonSegueIdentifier = "toEdit"
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        registerButton.isEnabled = false
 
         // Do any additional setup after loading the view.
     }
@@ -25,13 +30,17 @@ class RegisterViewController: UIViewController {
         {
             sender.setImage(UIImage(named: "ic_checked"), for: UIControl.State.normal)
             sender.isSelected = false
+            
+            registerButton.isEnabled = true
             //action kalau unchecked
+            
         }
         else
         {
             sender.setImage(UIImage(named: "ic_unchecked"), for: UIControl.State.normal)
             sender.isSelected = true
             //action kalau checked
+            registerButton.isEnabled = false
 
         }
     }
@@ -50,6 +59,7 @@ class RegisterViewController: UIViewController {
             showAlert(title: "Alert", message: "Fill valid password number")
         } else {
             //success
+            performSegue(withIdentifier: buttonSegueIdentifier, sender: registerButton)
         }
     }
     

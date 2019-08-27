@@ -10,9 +10,11 @@ import UIKit
 
 class PhotoGalleryViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var EditPhotoImageView: UIImageView!
+    @IBOutlet weak var EditPhotoButton: RoundButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
 }
